@@ -419,9 +419,6 @@ combos:
 - p: [12, 13]
   k: )
   l: [default]
-- p: [13, 14]
-  k: _
-  l: [default]
 - p: [21, 22]
   k: '['
   l: [default]
