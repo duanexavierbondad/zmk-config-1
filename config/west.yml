@@ -4,17 +4,16 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: duanexavierbondad
-      url-base: https://github.com/duanexavierbondad
   projects:
+    - name: zmk
+      remote: caksoylar
+      revision: caksoylar/zen-8bit
+      import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
     - name: zmk-tri-state
       remote: caksoylar
       revision: main
-    - name: zmk
-      remote: caksoylar
-      revision: caksoylar/experimental
   self:
     path: config
