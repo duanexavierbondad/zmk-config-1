@@ -419,9 +419,6 @@ combos:
 - p: [12, 13]
   k: )
   l: [default]
-- p: [13, 14]
-  k: _
-  l: [default]
 - p: [21, 22]
   k: '['
   l: [default]
@@ -485,7 +482,7 @@ combos:
 - p: [30, 35]
   k: {t: default, h: toggle}
   l: [extra]
-- p: [13, 16]
+- p: [4, 5]
   k: {t: val, h: toggle}
   l: [sys]
 - p: [14, 15]
