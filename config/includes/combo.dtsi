@@ -32,7 +32,6 @@
         COMBO(RBRC,          &kp RBRC,       LT2 LT1,         DEF,          80,  50)  //    }
         COMBO(LPAR,          &kp LPAR,       LM3 LM2,         DEF,          80,  50)  //    (
         COMBO(RPAR,          &kp RPAR,       LM2 LM1,         DEF,          80,  50)  //    )
-        COMBO(UNDER,        &kp UNDER,       LM1 LM0,         DEF,          80,  50)  //    _
         COMBO(LBKT,          &kp LBKT,       LB3 LB2,         DEF,          80,  50)  //    [
         COMBO(RBKT,          &kp RBKT,       LB2 LB1,         DEF,          80,  50)  //    ]
 
