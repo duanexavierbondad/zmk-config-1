@@ -223,16 +223,16 @@ layers:
   - {type: held}
   media:
   - ''
-  - Win Prev
+  - ''
   - Vol Up
-  - Win Next
+  - ''
   - MUTE
   - ''
   - ''
   - ''
   - ''
   - ''
-  - Win Close
+  - ''
   - ⏮️
   - Vol Down
   - ⏭️
