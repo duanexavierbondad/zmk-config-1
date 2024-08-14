@@ -7,7 +7,6 @@ manifest:
     - name: duanexavierbondad
       url-base: https://github.com/duanexavierbondad
   projects:
-      import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
@@ -15,7 +14,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk
-      remote: caksoylar
+      remote: duanexavierbondad
       revision: caksoylar/experimental
   self:
     path: config
