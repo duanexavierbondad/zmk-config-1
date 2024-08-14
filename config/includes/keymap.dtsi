@@ -170,8 +170,8 @@
                 media_layer {  
                 label = "MED"; //MEDIA
                 bindings = <
-                &none                 &kp LS(TAB)    &kp C_VOL_UP     &swapper          &kp C_MUTE                 &none            &none              &none           &none           &none           
-                &kp LA(F4)            &kp C_PREV    &kp C_VOL_DN      &kp C_NEXT        &kp C_PP                   &none            &none              &none           &none           &none           
+                &none                 &none         &kp C_VOL_UP      &none             &kp C_MUTE                 &none            &none              &none           &none           &none           
+                &none                 &kp C_PREV    &kp C_VOL_DN      &kp C_NEXT        &kp C_PP                   &none            &none              &none           &none           &none           
                 &none                 &none         &none             &none             &kp C_STOP                 &none            &none              &none           &none           &none           
                                                     &trans            &trans            &trans                     &trans           &trans             &trans
                         >;
