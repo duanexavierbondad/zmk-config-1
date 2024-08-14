@@ -17,7 +17,7 @@ manifest:
     - name: zmk-tri-state
       remote: caksoylar
       revision: main
-    - name: zmk
+    - name: zmk1
       remote: duanexavierbondad
       revision: caksoylar/experimental
   self:
