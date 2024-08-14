@@ -72,7 +72,7 @@
         COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    TAP LAYER CHANGE
         
         //SYS
-        COMBO(VAL,            &to VAL,       LM1 RM1,         SYS,          80,  50)  //    VAL LAYER CHANGE
+        COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
         COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
         
         /*combo_rbrc {
