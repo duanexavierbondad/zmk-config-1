@@ -370,7 +370,7 @@ layers:
   - ⏎
   - {t: default, h: toggle}
   sys:
-  - ''
+  - BT CLR
   - ''
   - ''
   - ''
@@ -379,7 +379,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BT CLR
   - ''
   - ''
   - ''
@@ -479,9 +479,6 @@ combos:
 - p: [13, 14]
   k: CAPSLOCK
   l: [nav]
-- p: [1, 2, 3]
-  k: Tab Close
-  l: [screen]
 - p: [11, 12, 13]
   k: Win Close
   l: [screen]
@@ -494,12 +491,6 @@ combos:
 - p: [30, 35]
   k: {t: default, h: toggle}
   l: [extra]
-- p: [2, 3]
-  k: BT CLR
-  l: [sys]
-- p: [6, 7]
-  k: BT CLR
-  l: [sys]
 - p: [13, 16]
   k: {t: val, h: toggle}
   l: [sys]
