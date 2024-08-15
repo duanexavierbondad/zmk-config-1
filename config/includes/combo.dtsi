@@ -75,7 +75,7 @@
         COMBO(TO_DEF,         &to DEF,       LT3 LT2 LT1,     VALTWO,       80,  50)  //    DEF LAYER CHANGE
         
         //EXTRA
-        COMBO(EXTRAtoDEF,     &to DEF,       LH2 RH2,         EXTRA,        80,  50)  //    DEF LAYER CHANGE
+        COMBO(EXTRAtoDEF,     &to DEF,       LH2 RH2,        QWERTY,        80,  50)  //    DEF LAYER CHANGE
 
         //TAP
         COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    DEF LAYER CHANGE
@@ -83,7 +83,7 @@
         //SYS
         COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
         COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
-        COMBO(EXTRA,        &to EXTRA,       LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
+        COMBO(EXTRA,        &to QWERTY,      LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
 
         /*combo_rbrc {
             timeout-ms = <50>;
