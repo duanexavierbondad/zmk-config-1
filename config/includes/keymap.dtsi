@@ -107,7 +107,7 @@
     };
 };
 
-#include "combo.dtsi"
+#include "combos.dtsi"
 
 / {
         keymap {
