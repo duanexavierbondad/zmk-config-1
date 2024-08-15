@@ -75,7 +75,7 @@
         COMBO(TO_DEF,         &to DEF,       LT3 LT2 LT1,     VALTWO,       80,  50)  //    DEF LAYER CHANGE
         
         //EXTRA
-        //COMBO(EXtoDEF,     &to DEF,       LH2 RH2,        EXTRA,        80,  50)  //    DEF LAYER CHANGE
+        COMBO(EXtoDEF,     &to DEF,       LH2 RH2,        EXTRA,        80,  50)  //    DEF LAYER CHANGE
 
         //TAP
         COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    DEF LAYER CHANGE
