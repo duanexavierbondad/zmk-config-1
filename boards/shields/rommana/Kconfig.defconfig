@@ -1,20 +1,3 @@
-if SHIELD_ROMMANA_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Rommana"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_ROMMANA_LEFT || SHIELD_ROMMANA_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif
-
 
 
 if SHIELD_ROMMANA_LEFT
@@ -34,7 +17,7 @@ config ZMK_BLE
 	default y
 endif
 
-if SHIELD_XAVIEN_LEFT || SHIELD_XAVIEN_RIGHT
+if SHIELD_ROMMANA_LEFT || SHIELD_ROMMANA_RIGHT
 
 if ZMK_DISPLAY
 
