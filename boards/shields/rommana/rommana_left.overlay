@@ -1,4 +1,4 @@
-#include "xavien.dtsi"
+#include "rommana.dtsi"
 
 /{chosen {
     		zephyr,display = &nice_view;
