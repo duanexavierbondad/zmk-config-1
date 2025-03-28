@@ -13,7 +13,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-tri-state
-      remote: caksoylar
-      revision: split-locality
+      remote: dhruvinsh
+      revision: main
   self:
     path: config
