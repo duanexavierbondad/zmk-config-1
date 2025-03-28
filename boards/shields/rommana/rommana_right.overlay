@@ -1,6 +1,6 @@
 
 
-#include "xavien.dtsi"
+#include "rommana.dtsi"
 
 
 &default_transform {
