@@ -1,357 +1,521 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: five_column_transform}
 layers:
-  DEF:
+  BASE:
   - Q
   - W
   - F
   - P
   - B
-  - K
+  - J
   - L
   - U
   - Y
-  - ''''
-  - {t: A, h: Ctrl}
-  - {t: R, h: Gui}
-  - {t: S, h: Alt}
-  - {t: T, h: Shift}
+  - ;
+  - '&hml LGUI A'
+  - '&hml LALT R'
+  - '&hml LCTRL S'
+  - '&hml LSHFT T'
   - G
   - M
-  - {t: N, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: O, h: Ctrl}
+  - '&hmr RSHFT N'
+  - '&hmr RCTRL E'
+  - '&hmr RALT I'
+  - '&hmr RGUI O'
   - Z
   - X
   - C
-  - {t: D, h: MSE}
+  - D
   - V
-  - J
+  - K
   - H
   - ','
   - .
   - /
-  - {t: ↹, h: Gui}
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
+  - {t: Esc, h: MED}
+  - {t: ↹, h: NAV}
+  - {t: ␣, h: SCREEN}
   - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
-  - {t: ⌦, h: Alt}
-  BRD:
-  - X
-  - C
-  - L
-  - F
-  - B
-  - J
-  - Y
-  - O
-  - U
-  - ''''
-  - {t: R, h: Ctrl}
-  - {t: S, h: Gui}
-  - {t: N, h: Alt}
-  - {t: T, h: Shift}
-  - P
-  - K
-  - {t: H, h: Shift}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
-  - {t: A, h: Ctrl}
-  - ''
-  - W
-  - M
-  - {t: G, h: MSE}
-  - ''
-  - ''
-  - D
-  - ','
-  - .
-  - ''
-  - {t: ↹, h: Gui}
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
-  - {t: ⌦, h: Alt}
-  GME:
-  - ↹
+  - {t: ⏎, h: NUM}
+  - {t: ⌦, h: FUN}
+  MAC:
   - Q
   - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - Esc
-  - Shift
-  - A
-  - S
-  - D
   - F
-  - H
+  - P
+  - B
   - J
-  - K
   - L
-  - {t: GME, h: toggle}
-  - Esc
+  - U
+  - Y
+  - ;
+  - '&hml LCTRL A'
+  - '&hml LALT R'
+  - '&hml LGUI S'
+  - '&hml LSHFT T'
+  - G
+  - M
+  - '&hmr RSHFT N'
+  - '&hmr LGUI E'
+  - '&hmr RALT I'
+  - '&hmr RCTRL O'
   - Z
   - X
   - C
+  - D
   - V
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - /
-  - Ctrl
-  - Alt
-  - ␣
-  - NAV
-  - ⏎
-  - {t: GME, h: toggle}
-  SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - /
+  - {t: Esc, h: MED}
+  - {t: ↹, h: MACNAV}
+  - {t: ␣, h: MACSCREEN}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: NUM}
+  - {t: ⌦, h: FUN}
+  NUM:
+  - '*'
   - '7'
   - '8'
   - '9'
-  - ','
   - +
-  - '='
-  - _
-  - '-'
-  - ^
-  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
   - '4'
   - '5'
   - '6'
-  - .
-  - ''
-  - ¿
+  - '='
+  - '='
+  - +
+  - '-'
   - '*'
-  - '&'
-  - ''
-  - ;
+  - /
+  - '`'
   - '1'
   - '2'
   - '3'
-  - /
-  - Gui
-  - ⌫
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
   - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - Alt
+  - {t: ▽, type: trans}
   NAV:
-  - Win Close
-  - Tab Left
-  - Tab Right
-  - Tab Close
-  - Vol Up
-  - Insert
-  - Page Down
+  - Alt+←
+  - Alt+→
   - ↑
-  - Page Up
-  - Calc
-  - Ctrl
-  - Gui
-  - Alt
-  - {t: ↹, h: Shift}
-  - Vol Down
+  - Ctl+C
+  - Ctl+V
+  - ''
+  - Scroll ↑
+  - '&mmv MOVE_Y(-ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - Scroll ↓
+  - ''
   - Home
   - ←
   - ↓
   - →
   - End
+  - Scroll ←
+  - '&mmv MOVE_X(-ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - '&mmv MOVE_Y(ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - '&mmv MOVE_X(ZMK_POINTING_DEFAULT_MOVE_VAL)'
+  - Scroll →
   - ''
-  - Win Prev
-  - Win Next
-  - Paste
-  - ⏯
+  - Ctl+X
   - ''
-  - ⌦
-  - ⏮️
-  - ⏭️
   - ''
-  - Gui
+  - ''
+  - ''
+  - Alt+←
+  - Alt+→
+  - ''
+  - ''
   - ''
   - {type: held}
+  - ''
+  - Left Click
+  - Right Click
+  - ''
+  MACNAV:
+  - ''
+  - ''
+  - ↑
+  - Gui+C
+  - Gui+V
+  - ''
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - ''
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Scroll ←
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll →
+  - ''
+  - Gui+X
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+←
+  - Gui+→
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - Left Click
+  - Right Click
+  - ''
+  SYM:
+  - '%'
+  - '&'
+  - ^
+  - '{'
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '|'
+  - $
+  - '#'
+  - '['
+  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - ''''
+  - '"'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - _
+  - {type: held}
   - {t: ▽, type: trans}
-  - ␣
-  - Alt
+  - {t: ▽, type: trans}
+  SCREEN:
+  - ''
+  - Ctl+W
+  - Ctl+F
+  - Tab Left
+  - Tab Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+A
+  - Ctl+B
+  - Ctl+S
+  - Win Prev
+  - Win Next
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+F4
+  - Desk Left
+  - Desk Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MACSCREEN:
+  - ''
+  - ''
+  - Gui+F
+  - Tab Left
+  - Tab Right
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+A
+  - Gui+B
+  - Gui+S
+  - Win Prev
+  - '&swappermac'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+←
+  - Ctl+→
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   FUN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - Out USB
-  - Out BLE
-  - {t: DEF, h: toggle}
-  - {t: BRD, h: toggle}
-  - {t: GME, h: toggle}
-  - F6
+  - F12
   - F7
   - F8
   - F9
+  - Print Scrn
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - APP
+  - ↹
+  - ␣
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  MED:
+  - Vol Up
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - Scroll ↑
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Vol Down
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⏮️
+  - ⏯
+  - ⏭️
+  - STOP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  VALO:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctrl
+  - Z
+  - X
+  - C
+  - {t: B, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - V
+  - {t: V, h: VAL2}
+  - ␣
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  VAL2:
+  - CAPSLOCK
+  - ''
+  - W
+  - '4'
+  - B
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - G
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Win Next
+  - ''
+  - T
+  - Y
+  - V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BASE, h: toggle}
+  - {t: Ctrl, type: held}
+  - ␣
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  EXTRA:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Esc
+  - ↹
+  - ␣
+  - ⌫
+  - ⏎
+  - {t: BASE, h: toggle}
+  TAP: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, Esc, ↹, ␣, ⌫, ⏎, ⌦]
+  SYS:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - {t: BASE, h: toggle}
+  - {t: BASE, h: toggle}
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: MAC, h: toggle}
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - ''
-  - Desk Left
-  - Desk Right
-  - F11
-  - F12
-  - ''
-  - Caps Lock
-  - Print Scrn
-  - Pause Break
+  - Boot
+  - EP ON
+  - Out USB
+  - Out BLE
+  - Reset
+  - Reset
   - ''
   - ''
-  - {t: Reset, h: Boot}
+  - EP ON
+  - Boot
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - {t: Reset, h: Boot}
-  - ''
-  MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Scroll ←
-  - Scroll ↓
-  - Mouse ↑
-  - Scroll ↑
-  - Scroll →
-  - Ctrl
-  - Gui
-  - Alt
-  - Shift
-  - ''
-  - Right Click
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - Back Click
-  - Middle Click
-  - Forward Click
-  - ''
-  - ''
-  - ''
-  - ''
-  - Left Click
-  - Right Click
-  - ''
-combos:
-- p: [2, 3]
-  k: J
-  l: [DEF]
-- p: [2, 3]
-  k: Q
-  l: [BRD]
-- p: [1, 2]
-  k: V
-  l: [BRD]
-- p: [6, 7]
-  k: ;
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [7, 8]
-  k: '`'
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [12, 13]
-  k: (
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [16, 17]
-  k: )
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [11, 12]
-  k: '['
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [17, 18]
-  k: ']'
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [11, 13]
-  k: ↹
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [16, 18]
-  k: ⌦
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [11, 12, 13]
-  k: Esc
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [16, 17, 18]
-  k: ⏎
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [13, 16]
-  k: Caps Word
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [3, 4]
-  k: Lock
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [4, 14]
-  k: ⏯
-  l: [NAV]
-  a: right
-- p: [21, 22]
-  k: Z
-  l: [DEF, BRD]
-- p: [22, 23]
-  k: V
-  l: [DEF]
-- p: [26, 27]
-  k: \
-  l: [DEF, BRD]
-  draw_separate: true
-- p: [27, 28]
-  k: /
-  l: [DEF, BRD, SYM]
-  draw_separate: true
-- p: [21, 22]
-  k: F12
-  l: [FUN]
-  a: bottom
-- p: [27, 28]
-  k: BT CLR
-  l: [FUN]
-  a: bottom
-- p: [2, 7]
-  k: Show Batt
-  l: [FUN]
-  a: top
-  o: 0.25
-- p: [3, 6]
-  k: Show Conn
-  l: [FUN]
-  a: top
-- p: [31, 32]
-  k: MSE
-  l: [DEF, BRD]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
